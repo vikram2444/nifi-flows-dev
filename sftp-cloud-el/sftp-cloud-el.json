@@ -164,7 +164,7 @@
     "labels" : [ ],
     "logFileSuffix" : "LoadToCloud",
     "maxConcurrentTasks" : 1,
-    "name" : "LoadToCloud (gitHub)",
+    "name" : "LoadToCloud-EL (gitHub)",
     "outputPorts" : [ ],
     "position" : {
       "x" : 0.0,
@@ -890,70 +890,6 @@
         "background-color" : "#007bff"
       },
       "type" : "org.apache.nifi.processors.azure.storage.PutAzureDataLakeStorage",
-      "yieldDuration" : "1 sec"
-    }, {
-      "autoTerminatedRelationships" : [ ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "WARN",
-      "bundle" : {
-        "artifact" : "nifi-box-nar",
-        "group" : "org.apache.nifi",
-        "version" : "2.3.0"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "PRIMARY",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "29748d27-947e-3664-8749-e875c9d12bfd",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "ConsumeBoxEnterpriseEvents",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : 328.0,
-        "y" : 337.0
-      },
-      "properties" : {
-        "Start Event Position" : "earliest"
-      },
-      "propertyDescriptors" : {
-        "Start Offset" : {
-          "displayName" : "Start Offset",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Start Offset",
-          "sensitive" : false
-        },
-        "Event Types" : {
-          "displayName" : "Event Types",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Event Types",
-          "sensitive" : false
-        },
-        "Start Event Position" : {
-          "displayName" : "Start Event Position",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "Start Event Position",
-          "sensitive" : false
-        },
-        "box-client-service" : {
-          "displayName" : "Box Client Service",
-          "dynamic" : false,
-          "identifiesControllerService" : true,
-          "name" : "box-client-service",
-          "sensitive" : false
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 0,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "org.apache.nifi.processors.box.ConsumeBoxEnterpriseEvents",
       "yieldDuration" : "1 sec"
     } ],
     "remoteProcessGroups" : [ ],
