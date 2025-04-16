@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1744807349606,
+    "description" : "This is the nifi flow for the extract the file from the sftp server and load the file to the cloud ",
+    "identifier" : "sftp-cloud-el",
+    "lastModifiedTimestamp" : 1744807349606,
+    "name" : "sftp-cloud-el",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
