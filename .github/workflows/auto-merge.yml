@@ -26,4 +26,10 @@ jobs:
           git fetch origin
           git checkout main
           git merge origin/nifi-flow-1.0.0 --no-ff -m "CI: Auto-merged from nifi-flow-1.0.0"
+          
+      - name: Push changes to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/vikram2444/nifi-flows-dev.git
           git push origin main
