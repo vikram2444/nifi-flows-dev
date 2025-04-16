@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1744809611599,
+    "description" : "This flow list the updated file from the cloud and fetch the data from the updated file and load to the PostgreSQL database",
+    "identifier" : "cloud-database-el",
+    "lastModifiedTimestamp" : 1744809611599,
+    "name" : "cloud-database-el",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
