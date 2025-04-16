@@ -1,0 +1,29 @@
+name: Auto Merge to Main
+
+on:
+  push:
+    branches:
+      - nifi-flow-1.0.0
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0  # important to access full git history
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge changes to main
+        run: |
+          git fetch origin
+          git checkout main
+          git merge origin/nifi-flow-1.0.0 --no-ff -m "CI: Auto-merged from nifi-flow-1.0.0"
+          git push origin main
