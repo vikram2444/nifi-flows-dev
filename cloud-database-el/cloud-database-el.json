@@ -994,7 +994,7 @@
         "dbcp-min-evictable-idle-time" : "30 mins",
         "Max Total Connections" : "8",
         "dbcp-max-conn-lifetime" : "-1",
-        "Database Connection URL" : "jdbc:postgresql://192.168.1.36:5432/sensordata",
+        "Database Connection URL" : "jdbc:postgresql://192.168.1.69:5432/sensordata",
         "dbcp-time-between-eviction-runs" : "-1",
         "Database User" : "vikram",
         "dbcp-soft-min-evictable-idle-time" : "-1",
@@ -1093,7 +1093,7 @@
           "name" : "database-driver-locations",
           "resourceDefinition" : {
             "cardinality" : "MULTIPLE",
-            "resourceTypes" : [ "FILE", "URL", "DIRECTORY" ]
+            "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
           },
           "sensitive" : false
         },
@@ -1836,7 +1836,7 @@
     "inputPorts" : [ ],
     "labels" : [ ],
     "maxConcurrentTasks" : 1,
-    "name" : "CloudToDatabase-EL ( gitHub)",
+    "name" : "CloudToDatabase-EL ( gitHub )",
     "outputPorts" : [ ],
     "position" : {
       "x" : 0.0,
