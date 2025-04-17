@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1744865727758,
+    "description" : "Move the file from the sftp server to the cloud ",
+    "identifier" : "sftp-cloud-el",
+    "lastModifiedTimestamp" : 1744865727758,
+    "name" : "sftp-cloud-el",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
