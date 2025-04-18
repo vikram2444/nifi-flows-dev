@@ -2036,7 +2036,7 @@
         "y" : -712.0
       },
       "properties" : {
-        "Table Name" : "rawdata.mytable",
+        "Table Name" : "rawdata.wind_dataset",
         "db-fetch-db-type" : "PostgreSQL",
         "dbf-default-precision" : "10",
         "Max Wait Time" : "0 seconds",
